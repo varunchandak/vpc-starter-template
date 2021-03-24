@@ -59,31 +59,6 @@ Outputs:
       Name: !Sub "${AWS::StackName}-private-az-b-rtb"
 
 Resources:
-  VPCPeeringUSIN:
-    Type: AWS::EC2::VPCPeeringConnection
-    Properties:
-      VpcId: !Ref myVPC
-      PeerVpcId: !Ref myPrivateVPC
-    DependsOn: Vpc
-  VPCPeeringINSG:
-    Type: AWS::EC2::VPCPeeringConnection
-    Properties:
-      VpcId: !Ref myVPC
-      PeerVpcId: !Ref myPrivateVPC
-    DependsOn: Vpc
-  VPCPeeringUSSG:
-    Type: AWS::EC2::VPCPeeringConnection
-    Properties:
-      VpcId: !Ref myVPC
-      PeerVpcId: !Ref myPrivateVPC
-    DependsOn: Vpc
-
-
-
-######################################
-  ####################################
-  #####
-
   Vpc:
     Type: AWS::EC2::VPC
     Properties:
