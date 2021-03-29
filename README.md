@@ -2,13 +2,11 @@ Original Repo: [HERE](https://github.com/1Strategy/vpc-starter-template/)
 
 ---
 
-This CloudFormation template will create 3 VPCs in `us-east-1, `ap-south-1` and `ap-southeast-1` with
+This CloudFormation template will create 3 VPCs in `us-east-1`, `ap-south-1` and `ap-southeast-1` with
 - 2 Public Subnet
 - 2 Private Subnet
 - 1 NAT Gateway
 - 1 Internet Gateway
-
-in each region.
 
 ## IP Ranges
 
